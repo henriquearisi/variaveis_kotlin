@@ -1,0 +1,26 @@
+fun main() {
+    // 1. criação de variáveis
+    val idadePessoa1: Int = 25 // usando `val` porque a idade não deve mudar
+    var alturaPessoa1: Double = 1.75 // usando `var` porque a altura pode ser alterada posteriormente
+    val nomePessoa1: String = "Lucas" // usando `val` porque o nome não deve mudar
+    val ehEstudante: Boolean = true // usando `val` porque o status de estudante não deve mudar
+
+    // 2. atribuição de valores (já foi feita acima)
+
+    // 3. operações simples
+    val idadePessoa2: Int = 30
+    val somaIdades: Int = idadePessoa1 + idadePessoa2 // soma de idades
+
+    val alturaMultiplicada: Double = alturaPessoa1 * 2 // multiplicando altura por 2
+
+    val saudacao: String = "Olá, $nomePessoa1!" // concatenando nome com saudação
+
+    // 4. exibição de resultados
+    println("Idade da pessoa 1: $idadePessoa1 anos")
+    println("Altura da pessoa 1: $alturaPessoa1 metros")
+    println("Nome da pessoa 1: $nomePessoa1")
+    println("É estudante: $ehEstudante")
+    println("Soma das idades: $somaIdades anos")
+    println("Altura multiplicada por 2: $alturaMultiplicada metros")
+    println(saudacao)
+}
