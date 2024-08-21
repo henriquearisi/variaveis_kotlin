@@ -1,0 +1,29 @@
+fun main() {
+    // 1. criação de variáveis
+    val nomePessoa: String = "Maria" // usando `val` porque o nome não deve mudar
+    val idadePessoa: Int = 28 // usando `val` porque a idade não deve mudar durante a execução
+    var salarioBrutoMensal: Double = 3000.0 // usando `var` caso o salário possa ser ajustado
+    val mesesTrabalhados: Int = 12 // usando `val` porque a quantidade de meses não deve mudar
+    val quantidadeProdutosComprados: Int = 15 // usando `val` porque a quantidade de produtos não deve mudar
+
+    // 2. operações simples
+    val salarioAnualBruto: Double = salarioBrutoMensal * mesesTrabalhados // cálculo do salário anual bruto
+
+    val desconto: Double = 5000.0 // valor fixo de desconto
+    val salarioAnualLiquido: Double = salarioAnualBruto - desconto // cálculo do salário anual líquido
+
+    val valorMedioPorProduto: Double = salarioAnualLiquido / quantidadeProdutosComprados // cálculo da média do valor gasto por produto
+
+    val mensagem: String = "A $nomePessoa tem um salário anual líquido de R$$salarioAnualLiquido." // concatenando nome com mensagem personalizada
+
+    // 3. exibição de resultados
+    println("Nome: $nomePessoa")
+    println("Idade: $idadePessoa anos")
+    println("Salário bruto mensal: R$$salarioBrutoMensal")
+    println("Meses trabalhados: $mesesTrabalhados")
+    println("Quantidade de produtos comprados: $quantidadeProdutosComprados")
+    println("Salário anual bruto: R$$salarioAnualBruto")
+    println("Salário anual líquido: R$$salarioAnualLiquido")
+    println("Média de valor gasto por produto: R$$valorMedioPorProduto")
+    println(mensagem)
+}
